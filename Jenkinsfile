@@ -14,7 +14,7 @@ pipeline {
 
   environment {
       // General Variables for Pipeline
-      PROJECT_ROOT = 'app'
+      PROJECT_ROOT = './app'
       EMAIL_ADDRESS = 'berny.aguayo.tejos@gmail.com'
       REGISTRY = 'bernydesh/mychallenge'
   }
@@ -35,12 +35,12 @@ pipeline {
         steps {
           sh 'npm --version'
           echo '$(pwd)'
-          sh "cd ./${PROJECT_ROOT}; npm install"
+          sh "cd ${PROJECT_ROOT}; npm install"
         }
       }
       stage('Build docker-image') {
         steps {
-          sh "cd ./${PROJECT_ROOT};docker build -t ${REGISTRY}:${BUILD_NUMBER} . "
+          sh "cd ${PROJECT_ROOT};docker build -t ${REGISTRY}:${BUILD_NUMBER} . "
         }
       }
       stage('Deploy docker-image') {
