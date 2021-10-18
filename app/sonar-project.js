@@ -7,7 +7,7 @@ sonarqubeScanner(
       "sonar.projectName": "ChallengeSonar",
       "sonar.projectVersion": "0.0.1",
       "sonar.projectDescription": "SonarQube for Challenge",
-      "sonar.projectKey": "ChallengeSonar:Test",
+      "sonar.projectKey": "ChallengeSonar",
       "sonar.sources":
         "./app.js, ./config/db.config.js, ./routes/developers.js",
         "sonar.javascript.lcov.reportPaths": "./coverage/lcov.info",
