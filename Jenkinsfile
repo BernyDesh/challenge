@@ -16,7 +16,7 @@ pipeline {
       // General Variables for Pipeline
       PROJECT_ROOT = './app'
       EMAIL_ADDRESS = 'berny.aguayo.tejos@gmail.com'
-      REGISTRY = 'bernydehs/mychallenge'
+      REGISTRY = 'bernydesh/mychallenge'
   }
 
   stages {
