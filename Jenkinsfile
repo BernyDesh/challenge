@@ -14,7 +14,7 @@ pipeline {
 
   environment {
       // General Variables for Pipeline
-      PROJECT_ROOT = './'
+      PROJECT_ROOT = './app'
       EMAIL_ADDRESS = 'berny.aguayo.tejos@gmail.com'
       REGISTRY = 'bernydehs/mychallenge'
   }
