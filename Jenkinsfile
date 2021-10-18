@@ -34,7 +34,7 @@ pipeline {
       stage('Install dependencies') {
         steps {
           sh 'npm --version'
-          echo '$(pwd)'
+          echo "$(pwd)"
           sh "cd ${PROJECT_ROOT}; npm install"
         }
       }
